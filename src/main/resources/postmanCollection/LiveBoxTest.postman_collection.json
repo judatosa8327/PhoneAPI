@@ -1,0 +1,42 @@
+{
+	"variables": [],
+	"info": {
+		"name": "LiveBoxTest",
+		"_postman_id": "0d821120-8e1d-54b8-64ad-dcf1f87ba380",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/phoneBook-api/contacts/users",
+			"request": {
+				"url": "http://localhost:8081/phoneBook-api/contacts/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "LiveBoxTest"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/phoneBook-api/contacts/users",
+			"request": {
+				"url": "http://localhost:8081/phoneBook-api/contacts/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n    \t\"id\": null,\n        \"firstName\": \"margarita\",\n        \"lastName\": \"cardona marin\",\n        \"infoPhoneNumbers\": [\n            {\n                \"phoneNumber\": \"3136600000\"\n            },\n            {\n                \"phoneNumber\": \"3116666666\"\n            }\n        ]\n    }\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
